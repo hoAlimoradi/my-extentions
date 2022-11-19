@@ -11,6 +11,8 @@
 		C627314B2928ACDA0023A45E /* my_extentions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C62731402928ACDA0023A45E /* my_extentions.framework */; };
 		C62731502928ACDA0023A45E /* my_extentionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C627314F2928ACDA0023A45E /* my_extentionsTests.swift */; };
 		C62731512928ACDA0023A45E /* my_extentions.h in Headers */ = {isa = PBXBuildFile; fileRef = C62731432928ACDA0023A45E /* my_extentions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C627315C2928B25A0023A45E /* Double+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = C627315B2928B25A0023A45E /* Double+Extention.swift */; };
+		C627315F2928B6780023A45E /* DoubleExtentionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C627315E2928B6780023A45E /* DoubleExtentionTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		C62731442928ACDA0023A45E /* my_extentions.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = my_extentions.docc; sourceTree = "<group>"; };
 		C627314A2928ACDA0023A45E /* my-extentionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "my-extentionsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C627314F2928ACDA0023A45E /* my_extentionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = my_extentionsTests.swift; sourceTree = "<group>"; };
+		C627315B2928B25A0023A45E /* Double+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extention.swift"; sourceTree = "<group>"; };
+		C627315E2928B6780023A45E /* DoubleExtentionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtentionTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 		C62731422928ACDA0023A45E /* my-extentions */ = {
 			isa = PBXGroup;
 			children = (
+				C627315A2928B2120023A45E /* Extentions */,
 				C62731432928ACDA0023A45E /* my_extentions.h */,
 				C62731442928ACDA0023A45E /* my_extentions.docc */,
 			);
@@ -80,9 +85,26 @@
 		C627314E2928ACDA0023A45E /* my-extentionsTests */ = {
 			isa = PBXGroup;
 			children = (
+				C627315D2928B60F0023A45E /* Extentions */,
 				C627314F2928ACDA0023A45E /* my_extentionsTests.swift */,
 			);
 			path = "my-extentionsTests";
+			sourceTree = "<group>";
+		};
+		C627315A2928B2120023A45E /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				C627315B2928B25A0023A45E /* Double+Extention.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		C627315D2928B60F0023A45E /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				C627315E2928B6780023A45E /* DoubleExtentionTest.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C62731452928ACDA0023A45E /* my_extentions.docc in Sources */,
+				C627315C2928B25A0023A45E /* Double+Extention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C62731502928ACDA0023A45E /* my_extentionsTests.swift in Sources */,
+				C627315F2928B6780023A45E /* DoubleExtentionTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +420,7 @@
 		C62731582928ACDA0023A45E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JXQ54B2CD8;
@@ -412,6 +437,7 @@
 		C62731592928ACDA0023A45E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JXQ54B2CD8;
